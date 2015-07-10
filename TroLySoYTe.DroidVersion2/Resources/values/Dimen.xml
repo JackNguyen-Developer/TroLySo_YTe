@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<dimen name="divider_padding_bottom">0dp</dimen>
+	<dimen name="divider_padding">-10dp</dimen>
+	<dimen name="searchBoxpadding">10dp</dimen>
+	<dimen name="searchBoxMargin">5dp</dimen>
+	<dimen name="textSize">15dp</dimen>
+	<dimen name="textSizeTitle">20dp</dimen>
+	<dimen name="MarginItem">5dp</dimen>
+	<dimen name="btChangeTypeMap_MarginLeft">20dp</dimen>
+	<dimen name="btChangeTypeMap_Width">90dp</dimen>
+	<dimen name="btDirection_MarinBottom">20dp</dimen>
+</resources>

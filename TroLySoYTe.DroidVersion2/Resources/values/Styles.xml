@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+<!--		<item name="colorPrimary">#F79034</item>-->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="searchViewStyle">@style/SearchViewStyle</item>
+		<item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
+		<item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+		<item name="android:icon">@drawable/icon_main</item>
+
+<!--		<item name="android:statusBarColor">@color/colorPrimary</item>-->
+<!--<item name="android:windowTranslucentStatus">false</item>-->
+
+	</style>
+	<style name="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+		<item name="color">@color/ArrowToggleColor</item>
+		<item name="spinBars">true</item>
+	</style>
+	<style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+		 <item name="closeIcon">@drawable/icon_main</item>
+	</style>
+
+	<style name="MyThemeLoad" parent="@android:style/Theme.Holo.Light"> 
+ 	 	<item name="android:windowBackground">@drawable/screenshot</item> 
+ 	 	<item name="android:windowActionBar">false</item>
+    	<item name="android:windowNoTitle">true</item> 	 	
+ 	</style>
+
+</resources>

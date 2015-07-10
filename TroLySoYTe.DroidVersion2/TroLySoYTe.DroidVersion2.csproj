@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{D02969F6-8757-4A3E-B753-277F46B93011}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TroLySoYTe.DroidVersion2</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>TroLySoYTe.DroidVersion2</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\Components\googleplayservices-13.0\lib\android\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MyActionBarDrawerToggle.cs" />
+    <Compile Include="Adapter\LeftMenuItem.cs" />
+    <Compile Include="AppController.cs" />
+    <Compile Include="..\TroLySoYTe\IoC\ServiceContainer.cs">
+      <Link>Core\IoC\ServiceContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\Address.cs">
+      <Link>Core\Model\Address.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\District.cs">
+      <Link>Core\Model\District.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\DrugStore.cs">
+      <Link>Core\Model\DrugStore.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\Keyword.cs">
+      <Link>Core\Model\Keyword.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\PlaceBaseModel.cs">
+      <Link>Core\Model\PlaceBaseModel.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\Street.cs">
+      <Link>Core\Model\Street.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\Type.cs">
+      <Link>Core\Model\Type.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\Model\Ward.cs">
+      <Link>Core\Model\Ward.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\SQLConnection\IConnection.cs">
+      <Link>Core\SQLConnection\IConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\ViewModel\BaseViewModel.cs">
+      <Link>Core\ViewModel\BaseViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\TroLySoYTe\ViewModel\MainViewModel.cs">
+      <Link>Core\ViewModel\MainViewModel.cs</Link>
+    </Compile>
+    <Compile Include="DataAccessLayer.cs" />
+    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="DetailDialogFragment.cs" />
+    <Compile Include="DirectionController.cs" />
+    <Compile Include="..\TroLySoYTe\Model\myLocation.cs">
+      <Link>Core\Model\myLocation.cs</Link>
+    </Compile>
+    <Compile Include="LoadScreen.cs" />
+    <Compile Include="MapController.cs" />
+    <Compile Include="AsyncTaskLoadingImage.cs" />
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="LoadingImageUtil.cs" />
+    <Compile Include="RunableSharp.cs" />
+    <Compile Include="ZipHelper.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Adapter\DrugStoreListViewAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\menu\action_menu.xml" />
+    <AndroidResource Include="Resources\values\Color.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_logo2.png" />
+    <AndroidResource Include="Resources\layout\slidingMenuItem_layout.axml" />
+    <AndroidResource Include="Resources\values\Dimen.xml" />
+    <AndroidResource Include="Resources\drawable\dividerCustome.xml" />
+    <AndroidResource Include="Resources\drawable\textViewDivider.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\test.png" />
+    <AndroidResource Include="Resources\drawable\BG_SearchEditText.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_search.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_white.png" />
+    <AndroidResource Include="Resources\layout\listview_item_drugstore.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_intro.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_store_default.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_intro.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_search.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_search_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_store_default.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_intro.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_store_default.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_close.png" />
+    <AndroidResource Include="Resources\layout\detail_dialogfragment.xml" />
+    <AndroidResource Include="Resources\drawable\ButtonCustome.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_bg2.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_bg.png" />
+    <AndroidResource Include="Resources\layout\Map_Layout.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\my_location.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\my_location.png" />
+    <AndroidResource Include="Resources\drawable\btChangeTypeMap.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\screenshot.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_app.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logodefault.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_main.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Adapter\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Core\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>6.0.8.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\zipfile.zip" />
+    <AndroidAsset Include="Assets\DrugStore.sqlite" />
+  </ItemGroup>
+</Project>

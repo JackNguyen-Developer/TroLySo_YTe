@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">Trợ Lý Số Y Tế</string>
+	<string name="openeDrawer">Drawer Open</string>
+	<string name="closeDrawer">Drawer Close</string>
+	<string name="searchHint">Nhập từ khóa</string>
+	<string name="MapButtonText">Bản Đồ</string>
+	<string name="DetailTitle">Thông Tin Chi Tiết</string>
+	<string-array name="slidingMenuItem">		
+		<item>Bản Đồ</item>
+		<item>Giới Thiệu</item>
+	</string-array>
+</resources>

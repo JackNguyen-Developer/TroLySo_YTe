@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--  Map  -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment" />
+<!--  location and direction  -->
+    <Button
+        android:id="@+id/direction"
+        android:layout_width="@dimen/btChangeTypeMap_Width"
+        android:layout_height="wrap_content"
+        android:text="Direction"
+        android:background="@drawable/btchangetypemap"
+        android:layout_marginLeft="@dimen/btChangeTypeMap_MarginLeft"
+        android:textColor="@color/btChangeTypeMap_ColorText"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/btDirection_MarinBottom" />
+<!--  layout sliding top   -->
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#9900cc99"
+        android:layout_alignParentTop="true"
+        android:translationY="-250dp"
+        android:clickable="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_search">
+            <TextView
+                android:id="@+id/textView_District"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quận" />
+            <Spinner
+                android:id="@+id/spinner_District"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/textView_District" />
+            <TextView
+                android:id="@+id/textView_Ward"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Phường"
+                android:layout_toRightOf="@id/spinner_District" />
+            <Spinner
+                android:id="@+id/spinner_Ward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView_Ward" />
+            <EditText
+                android:padding="@dimen/searchBoxpadding"
+                android:layout_margin="@dimen/searchBoxMargin"
+                android:id="@+id/search_box"
+                android:layout_width="wrap_content"
+                android:minWidth="320dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:layout_height="40dp"
+                android:visibility="visible"
+                android:textSize="@dimen/textSize"
+                android:background="#ffffff"
+                android:hint="@string/searchHint"
+                android:maxLength="50"
+                android:layout_below="@id/spinner_District" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/searchBoxpadding"
+                android:layout_margin="@dimen/searchBoxMargin"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_below="@id/spinner_Ward" />
+        </RelativeLayout>
+        <ListView
+            android:layout_below="@id/layout_search"
+            android:id="@+id/listview_drugstores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:divider="@null" />
+        <LinearLayout
+            android:id="@+id/layout_changeTypeMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/normal"
+                android:layout_width="@dimen/btChangeTypeMap_Width"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:background="@drawable/btchangetypemap"
+                android:textColor="@color/btChangeTypeMap_ColorText"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/satellite"
+                android:layout_width="@dimen/btChangeTypeMap_Width"
+                android:layout_height="wrap_content"
+                android:text="Satelltite"
+                android:background="@drawable/btchangetypemap"
+                android:layout_marginLeft="@dimen/btChangeTypeMap_MarginLeft"
+                android:textColor="@color/btChangeTypeMap_ColorText"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/hybrid"
+                android:layout_width="@dimen/btChangeTypeMap_Width"
+                android:layout_height="wrap_content"
+                android:text="Hybrid"
+                android:background="@drawable/btchangetypemap"
+                android:layout_marginLeft="@dimen/btChangeTypeMap_MarginLeft"
+                android:textColor="@color/btChangeTypeMap_ColorText"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

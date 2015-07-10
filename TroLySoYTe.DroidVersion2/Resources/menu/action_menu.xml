@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:myapp="http://schemas.android.com/apk/res-auto">
+	  <item android:id="@+id/action_search"
+	  		android:icon="@drawable/ic_search_white"
+	  		android:title="search"
+	  		myapp:showAsAction="always">
+	  </item>
+<!--	  <item android:id="@+id/action_undo"
+	  		android:icon="@drawable/icon"
+	  		android:title="Undo"
+	  		myapp:showAsAction="never">
+	  </item>-->
+</menu>

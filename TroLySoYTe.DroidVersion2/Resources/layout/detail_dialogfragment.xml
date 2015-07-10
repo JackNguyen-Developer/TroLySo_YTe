@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/detail_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/DetailTitle"
+            android:textColor="@color/ColorTitle"
+            android:textSize="@dimen/textSizeTitle" />
+        <ImageView
+            android:id="@+id/detail_icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_close" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/detail_img_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/detail_lbl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_img_item"
+        android:layout_margin="15dp"
+        android:text="Tên cửa hàng: "
+        android:textColor="@color/ColorLabel"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/detail_txt_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_img_item"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/detail_lbl_name"
+        android:text="Name Text"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/detail_lbl_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_txt_item"
+        android:layout_margin="15dp"
+        android:text="Địa chỉ: "
+        android:textColor="@color/ColorLabel"
+        android:textSize="@dimen/textSize" />
+    <TextView
+        android:id="@+id/detail_txt_item_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_txt_item"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/detail_lbl_name"
+        android:text="Detail Text"
+        android:textSize="@dimen/textSize" />
+    <Button
+        android:id="@+id/btn_viewmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_txt_item_address"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:textColor="@color/ButtonColorText"
+        android:background="@drawable/ButtonCustome"
+        android:text="@string/MapButtonText" />
+</RelativeLayout>

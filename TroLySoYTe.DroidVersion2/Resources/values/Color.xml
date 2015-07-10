@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<color name="colorPrimary">#f77801</color>
+	<color name="colorPrimary2">#88f77801</color>
+	<color name="ListViewDrawerBackground">#FFFFFF</color>
+	<color name="ArrowToggleColor">#f5f5f5</color>
+	<color name="ColorPrimaryDark">#ea7100</color>
+	<color name="ColorTitle">#FFFFFF</color>
+	<color name="ColorLabel">#000000</color>
+	<color name="ButtonColorText">#FFFFFF</color>
+	<color name="btChangeTypeMap_ColorText">#FF6600</color>
+</resources>

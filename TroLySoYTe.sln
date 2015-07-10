@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TroLySoYTe", "TroLySoYTe\TroLySoYTe.csproj", "{21CB03DD-F9AE-433A-B2E7-733A7C057FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlidingMenuSharp", "SlidingMenuSharp\SlidingMenuSharp.csproj", "{555937D8-1533-4D19-A346-55C192C35A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TroLySoYTe.DroidVersion2", "TroLySoYTe.DroidVersion2\TroLySoYTe.DroidVersion2.csproj", "{D02969F6-8757-4A3E-B753-277F46B93011}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21CB03DD-F9AE-433A-B2E7-733A7C057FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CB03DD-F9AE-433A-B2E7-733A7C057FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CB03DD-F9AE-433A-B2E7-733A7C057FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CB03DD-F9AE-433A-B2E7-733A7C057FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555937D8-1533-4D19-A346-55C192C35A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555937D8-1533-4D19-A346-55C192C35A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555937D8-1533-4D19-A346-55C192C35A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555937D8-1533-4D19-A346-55C192C35A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02969F6-8757-4A3E-B753-277F46B93011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02969F6-8757-4A3E-B753-277F46B93011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02969F6-8757-4A3E-B753-277F46B93011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02969F6-8757-4A3E-B753-277F46B93011}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
